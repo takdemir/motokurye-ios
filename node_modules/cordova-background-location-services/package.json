@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+        "spec": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:pmwisdom/cordova-background-geolocation-services.git",
+          "sshUrl": "git+ssh://git@github.com/pmwisdom/cordova-background-geolocation-services.git",
+          "httpsUrl": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+          "gitUrl": "git://github.com/pmwisdom/cordova-background-geolocation-services.git",
+          "shortcut": "github:pmwisdom/cordova-background-geolocation-services",
+          "directUrl": "https://raw.githubusercontent.com/pmwisdom/cordova-background-geolocation-services/master/package.json"
+        }
+      },
+      "C:\\MTV1.0\\motokurye\\motokurye\\node_modules"
+    ]
+  ],
+  "_from": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+  "_id": "cordova-background-location-services@1.1.1",
+  "_inCache": true,
+  "_location": "/cordova-background-location-services",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+    "spec": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:pmwisdom/cordova-background-geolocation-services.git",
+      "sshUrl": "git+ssh://git@github.com/pmwisdom/cordova-background-geolocation-services.git",
+      "httpsUrl": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+      "gitUrl": "git://github.com/pmwisdom/cordova-background-geolocation-services.git",
+      "shortcut": "github:pmwisdom/cordova-background-geolocation-services",
+      "directUrl": "https://raw.githubusercontent.com/pmwisdom/cordova-background-geolocation-services/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git#cfade9845f58907138759d5531d4ca9158e85359",
+  "_shasum": "2909af9fc18c8feb992b3a8cfdd799d192e1e6bc",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+  "_where": "C:\\MTV1.0\\motokurye\\motokurye\\node_modules",
+  "author": {
+    "name": "Paul Wisdom"
+  },
+  "bugs": {
+    "url": "https://github.com/pmwisdom/cordova-background-geolocation-services/issues"
+  },
+  "cordova": {
+    "id": "cordova-background-location-services",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Background Geolocation Plugin For Anrdoid and iOS With JS Callbacks",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "gitHead": "cfade9845f58907138759d5531d4ca9158e85359",
+  "homepage": "https://github.com/pmwisdom/cordova-background-geolocation-services#readme",
+  "keywords": [
+    "gps",
+    "location",
+    "geolocation",
+    "background",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "phonegap"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-background-location-services",
+  "optionalDependencies": {},
+  "readme": "# cordova-background-geolocation-services\r\nBackground Geolocation For Android and iOS with pure javascript callbacks.\r\n\r\n#### What is this?\r\nThis plugin is for enabling background geolocation in your cordova project. It was aimed with the specific goal of normalizing the API for android and iOS and retrieving constant location updates in the background until you tell it to stop (If you tell it you want updates every 3 seconds it will give you one every 3 seconds). This is currently in active development. Feel free to make any requests. \r\n\r\nI've also included an activity detection API. It is used to save battery life, but you can also retrieve the likelihood of what the user is currently doing (standing still, walking, running, driving, etc).\r\n\r\n### Changelog :\r\n * 1.1.0 -Breaking- (If you need the lower swift versions, use 1.0.4)\r\n   - [iOS]: Converted to new Swift Version\r\n   - [iOS]: Fixed some cases where the plugin would keep running in the foreground\r\n * 1.0.4 New Low GPS mode for increased battery life on iOS\r\n * 1.0.3 Activity Detection And Much Better Battery Life For iOS!\r\n * 1.0.2 Error callbacks now correctly funnel through the location register\r\n \r\n### Techniques used:\r\n\r\n**Android** : Uses Fused Location API and Activity Recognition API to serve location updates endlessly.\r\n\r\n**iOS** : Uses a timer based approach and CoreMotion library to enable endless background tracking.\r\n\r\n###Setup: \r\n* Make sure you have Google Play Services AND Google Repository installed via your android-sdk manager prior to building your application with this. It will be under the extras part of the sdk manager. More information can be found here: http://developer.android.com/sdk/installing/adding-packages.html.\r\n\r\n###Installation:\r\n\r\nCordova :\r\n````\r\ncordova plugin add https://github.com/pmwisdom/cordova-background-geolocation-services.git --save\r\n````\r\n\r\nMeteor : \r\n````\r\nmeteor add mirrorcell:background-geolocation-plus\r\n````\r\n\r\n### How to use: \r\n\r\nThis plugin exports an object at \r\n````javascript\r\nwindow.plugins.backgroundLocationServices\r\n````\r\n\r\n````javascript\r\n\r\n//Make sure to get at least one GPS coordinate in the foreground before starting background services\r\nnavigator.geolocation.getCurrentPosition(function() {\r\n console.log(\"Succesfully retreived our GPS position, we can now start our background tracker.\");\r\n}, function(error) {\r\n console.error(error);\r\n});\r\n\r\n//Get plugin\r\nvar bgLocationServices =  window.plugins.backgroundLocationServices;\r\n\r\n//Congfigure Plugin\r\nbgLocationServices.configure({\r\n     //Both\r\n     desiredAccuracy: 20, // Desired Accuracy of the location updates (lower means more accurate but more battery consumption)\r\n     distanceFilter: 5, // (Meters) How far you must move from the last point to trigger a location update\r\n     debug: true, // <-- Enable to show visual indications when you receive a background location update\r\n     interval: 9000, // (Milliseconds) Requested Interval in between location updates.\r\n     useActivityDetection: true, // Uses Activitiy detection to shut off gps when you are still (Greatly enhances Battery Life)\r\n     \r\n     //Android Only\r\n     notificationTitle: 'BG Plugin', // customize the title of the notification\r\n     notificationText: 'Tracking', //customize the text of the notification\r\n     fastestInterval: 5000 // <-- (Milliseconds) Fastest interval your app / server can handle updates\r\n     \r\n});\r\n\r\n//Register a callback for location updates, this is where location objects will be sent in the background\r\nbgLocationServices.registerForLocationUpdates(function(location) {\r\n     console.log(\"We got an BG Update\" + JSON.stringify(location));\r\n}, function(err) {\r\n     console.log(\"Error: Didnt get an update\", err);\r\n});\r\n\r\n//Register for Activity Updates\r\n\r\n//Uses the Detected Activies / CoreMotion API to send back an array of activities and their confidence levels\r\n//See here for more information:\r\n//https://developers.google.com/android/reference/com/google/android/gms/location/DetectedActivity\r\nbgLocationServices.registerForActivityUpdates(function(activities) {\r\n     console.log(\"We got an activity update\" + activities);\r\n}, function(err) {\r\n     console.log(\"Error: Something went wrong\", err);\r\n});\r\n\r\n//Start the Background Tracker. When you enter the background tracking will start, and stop when you enter the foreground.\r\nbgLocationServices.start();\r\n\r\n\r\n///later, to stop\r\nbgLocationServices.stop();\r\n````\r\n\r\n### Known Issues:\r\n\r\nPhonegap Build : Swift files are not officially supported as of yet on phonegap build, so if there is a problem installing it in that environment, there isn't anything I can do until they are supported.\r\n\r\n### Credit!\r\n\r\nBy the way, credit to Christocracy and his great [plugin](https://github.com/christocracy/cordova-plugin-background-geolocation/tree/0.3.7) that spurned this one. It should share the same concepts via javascript.\r\n\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git"
+  },
+  "version": "1.1.1"
+}

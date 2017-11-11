@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "org.krapp.push"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "org.krapp.push"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "org.krapp.push"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.krapp.push"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "XXXXXXX",
+            "PACKAGE_NAME": "org.krapp.push"
+        }
+    },
+    "dependent_plugins": {}
+}
