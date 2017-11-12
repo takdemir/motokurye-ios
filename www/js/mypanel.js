@@ -198,6 +198,7 @@ var mypanel={
                             '<tr>'+'<td></td>'+'<td><input type="button" onclick="mypanel.executeonjob('+v.id+',\'alindi\','+(i-1)+')" class="btn btn-warning" value="Alındı" /> </td>'+'</tr>'+
                             '<tr>'+'<td>' +
                             '<input type="text" placeholder="Teslim Edilen" name="teslimEdilen" class="form-control" />' +
+                            '<input type="text" placeholder="Teslim Edilen Firma" name="teslimfirma" class="form-control" />' +
                             '<input type="text" placeholder="Teslim Saati" name="teslimSaati" class="form-control" onclick="mypanel.getteslimsaati('+(i-1)+')" /> </td>'+
                             '<td><input type="button" onclick="mypanel.executeonjob('+v.id+',\'teslim\','+(i-1)+')" class="btn btn-success" value="Teslim" /> </td>'+
                             '</tr>'+
@@ -377,12 +378,14 @@ var mypanel={
         }else{
 
             var teslimEdilen=$("input[name='teslimEdilen']:eq(" + eq + ")").val();
+            var teslimfirma=$("input[name='teslimfirma']:eq(" + eq + ")").val();
             var teslimsaati=$("input[name='teslimSaati']:eq(" + eq + ")").val();
             if(teslimEdilen!="") {
                 var data = {
                     "islem": jobID,
                     "action": "teslim",
                     "teslimalan": teslimEdilen,
+                    "teslimfirma": teslimfirma,
                     "teslimsaati": teslimsaati
                 };
 
@@ -400,11 +403,9 @@ var mypanel={
                     success: function (data) {
 
                         if (!data.hasError) {
-
+                            common.showToast("İşlem teslim edildi!","short","center",0);
                             mypanel.getjobsOnkurye(window.localStorage.getItem("kuryeID"));
                             mypanel.getdeliveredjobsOnkurye(window.localStorage.getItem("kuryeID"));
-                            common.showToast("İşlem teslim edildi!","short","center",0);
-
                         } else {
                             common.showToast("Teslim edilirken bir hata oluştu!","short","center",0);
                         }
