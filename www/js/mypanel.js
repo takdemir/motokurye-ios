@@ -162,14 +162,23 @@ var mypanel={
                             '<div id="'+collapseId+'" class="panel-collapse collapse '+accordionOpen+'" role="tabpanel" aria-labelledby="'+headId+'">'+
                             '<div class="panel-body">'+
 
-                            '<div class="panel panel-primary"><div class="panel-heading">ALINACAK</div><div class="panel-body">'+
+                            '<div class="panel panel-primary"><div class="panel-heading">KAYDI AÇAN (F1)</div><div class="panel-body">'+
                             '<table class="table table-bordered">'+
                             '<tr>'+'<th>Gönderi Nu.:</th>'+'<td>'+v.id+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Kişi</th>'+'<td>'+v.kayitveren+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td>'+v.kayitverencep+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Adres</th>'+'<td>'+v.kayitverenadres+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Not</th>'+'<td>'+v.not1+'</td>'+'</tr>'+
+                            '</table>'+
+                            '</div></div>'+
+
+                            '<div class="panel panel-primary"><div class="panel-heading">ALINACAK</div><div class="panel-body">'+
+                            '<table class="table table-bordered">'+
                             '<tr>'+'<th>Alınacak Kişi</th>'+'<td>'+v.alinankisi+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Semt</th>'+'<td>'+v.alinansemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Adres</th>'+'<td>'+v.alinanadres+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Tel:</th>'+'<td>'+v.kayitverencep+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Not1</th>'+'<td>'+v.not1+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Tel:</th>'+'<td>'+v.f2cep+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Not</th>'+'<td>'+v.not2+'</td>'+'</tr>'+
                             '</table>'+
                             '</div></div>'+
                             '<div class="panel panel-primary"><div class="panel-heading">TESLİM EDİLECEK</div><div class="panel-body">'+
@@ -178,7 +187,7 @@ var mypanel={
                             '<tr>'+'<th>Teslim Ed.Semt</th>'+'<td>'+v.teslimsemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Adres</th>'+'<td>'+v.teslimadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Tel:</th>'+'<td>'+v.f3cep+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Not3</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Not</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
                             '</table>'+
                             '</div></div>'+
                             '<div class="panel panel-primary"><div class="panel-heading">DİĞER BİLGİLER</div><div class="panel-body">'+
@@ -191,9 +200,6 @@ var mypanel={
                             table +='<tr>'+'<th>Okuma Saati</th>'+'<td>'+v.okumasaati+'</td>'+'</tr>'+
                             '<tr>'+'<th>Yetkili</th>'+'<td>'+v.yetkiliname+'</td>'+'</tr>'+
                             '<tr>'+'<th>Yetkili Telefon</th>'+'<td>'+v.yetkilitel+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Kayıt Veren (F1):</th>'+'<td>'+v.kayitveren+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Kayıt Veren Tel:</th>'+'<td>'+v.kayitverencep+'</td>'+'</tr>'+
-                            /*'<tr>'+'<th>F2 Tel.:</th>'+'<td>'+v.f2cep+'</td>'+'</tr>'+*/
 
                             '<tr>'+'<td></td>'+'<td><input type="button" onclick="mypanel.executeonjob('+v.id+',\'alindi\','+(i-1)+')" class="btn btn-warning" value="Alındı" /> </td>'+'</tr>'+
                             '<tr>'+'<td>' +
