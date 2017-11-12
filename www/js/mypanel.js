@@ -168,6 +168,7 @@ var mypanel={
                             '<tr>'+'<th>Kaydı Açan Kişi</th>'+'<td>'+v.kayitveren+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td>'+v.kayitverencep+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Adres</th>'+'<td>'+v.kayitverenadres+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Semt</th>'+'<td>'+v.kayitverensemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not1+'</td>'+'</tr>'+
                             '</table>'+
                             '</div></div>'+
