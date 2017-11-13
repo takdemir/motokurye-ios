@@ -169,7 +169,7 @@ var mypanel={
                             '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td>'+v.kayitverencep+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Adres</th>'+'<td>'+v.kayitverenadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Semt</th>'+'<td>'+v.kayitverensemt+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Kaydı Açan Yetkili</th>'+'<td>'+v.yetkiliname+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Yetkilisi</th>'+'<td>'+v.yetkiliname+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Yetkili Tel.</th>'+'<td>'+v.yetkilitel+'</td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not1+'</td>'+'</tr>'+
                             '</table>'+
@@ -180,10 +180,11 @@ var mypanel={
                             '<tr>'+'<th>Alınacak Kişi</th>'+'<td>'+v.alinankisi+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Semt</th>'+'<td>'+v.alinansemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Adres</th>'+'<td>'+v.alinanadres+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Alınacak Yetkili</th>'+'<td>'+v.alinacakYetkiliName+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Alınacak Yetkili Tel</th>'+'<td>'+v.alinacakYetkiliTel+'</td>'+'</tr>'+
                             '<tr>'+'<th>Tel:</th>'+'<td>'+v.f2cep+'</td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not2+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Alınacak Yetkili</th>'+'<td>'+v.alinacakYetkiliName+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Alınacak Yetkili Tel</th>'+'<td>'+v.alinacakYetkiliTel+'</td>'+'</tr>'+
+
                             '</table>'+
                             '</div></div>'+
                             '<div class="panel panel-primary"><div class="panel-heading">TESLİM EDİLECEK</div><div class="panel-body">'+
@@ -191,10 +192,11 @@ var mypanel={
                             '<tr>'+'<th>Teslim Ed.Kisi</th>'+'<td>'+v.teslimkisi+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Semt</th>'+'<td>'+v.teslimsemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Adres</th>'+'<td>'+v.teslimadres+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Teslim Ed.Yetkili</th>'+'<td>'+v.teslimedilecekYetkiliName+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Teslim Ed.Yetkili Tel</th>'+'<td>'+v.teslimedilecekYetkiliTel+'</td>'+'</tr>'+
                             '<tr>'+'<th>Tel:</th>'+'<td>'+v.f3cep+'</td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Teslim Ed.Yetkili</th>'+'<td>'+v.teslimedilecekYetkiliName+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Teslim Ed.Yetkili Tel</th>'+'<td>'+v.teslimedilecekYetkiliTel+'</td>'+'</tr>'+
+
                             '</table>'+
                             '</div></div>'+
                             '<div class="panel panel-primary"><div class="panel-heading">DİĞER BİLGİLER</div><div class="panel-body">'+
