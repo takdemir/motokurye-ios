@@ -195,7 +195,7 @@ var mypanel={
                             '<tr>'+'<th>Tel:</th>'+'<td>'+v.f3cep+'</td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Yetkili</th>'+'<td>'+v.teslimedilecekYetkiliName+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Teslim Ed.Yetkili Tel.</th><td>'+v.teslimedilecekYetkiliTel+'</td>'+'</tr>'
+                            '<tr>'+'<th>Teslim Ed.Yetkili Tel.</th><td>'+v.teslimedilecekYetkiliTel+'</td>'+'</tr>'+
                             '</table>'+
                             '</div></div>'+
                             '<div class="panel panel-primary"><div class="panel-heading">DİĞER BİLGİLER</div><div class="panel-body">'+
