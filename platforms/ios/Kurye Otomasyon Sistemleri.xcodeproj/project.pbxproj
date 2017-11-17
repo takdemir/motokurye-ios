@@ -69,6 +69,9 @@
 		D9A324B363034D0988EF0D1B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7AD15BA19B4ABAAF9B8210 /* AddressBook.framework */; };
 		A4AEED29F1174ABABAA2BA59 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE33865AF9E24955829808CD /* libsqlite3.tbd */; };
 		D88D53E6C09C495AA48184D1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 191BFE54AB83453E91698EA1 /* libz.tbd */; };
+		1FB12386677B49BC8D341746 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E558F7B5141430BB955DCF5 /* CDVFile.m */; };
+		5B6ECE02480E44ADB0F3B58B /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EFE6CB3B343A087CCF43C /* CDVLocalFilesystem.m */; };
+		8A57013D20CD4214955EAADF /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C5CB9E3E684BB7B0E6C047 /* CDVAssetLibraryFilesystem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +197,12 @@
 		7F7AD15BA19B4ABAAF9B8210 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		DE33865AF9E24955829808CD /* libsqlite3.tbd */ = {isa = PBXFileReference; name = "libsqlite3.tbd"; path = "usr/lib/libsqlite3.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 		191BFE54AB83453E91698EA1 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		1E558F7B5141430BB955DCF5 /* CDVFile.m */ = {isa = PBXFileReference; name = "CDVFile.m"; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6F6EFE6CB3B343A087CCF43C /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; name = "CDVLocalFilesystem.m"; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F7C5CB9E3E684BB7B0E6C047 /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.m"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A88413114F534043AB54B673 /* CDVFile.h */ = {isa = PBXFileReference; name = "CDVFile.h"; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1E1B4550C66A45F7B6B04A20 /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; name = "CDVLocalFilesystem.h"; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FAC356C24B39464EA6FA910E /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.h"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +427,12 @@
 				6618426873E541F8A35EFC4E /* GCMReceiverDelegate.h */,
 				E6EB8D9747BD47BFBB8C82A0 /* GCMService.h */,
 				D0E963495F7C497B8BCE22C6 /* GoogleCloudMessaging.h */,
+				1E558F7B5141430BB955DCF5 /* CDVFile.m */,
+				6F6EFE6CB3B343A087CCF43C /* CDVLocalFilesystem.m */,
+				F7C5CB9E3E684BB7B0E6C047 /* CDVAssetLibraryFilesystem.m */,
+				A88413114F534043AB54B673 /* CDVFile.h */,
+				1E1B4550C66A45F7B6B04A20 /* CDVLocalFilesystem.h */,
+				FAC356C24B39464EA6FA910E /* CDVAssetLibraryFilesystem.h */,
 			);
 			name = Plugins;
 			path = "Kurye Otomasyon Sistemleri/Plugins";
@@ -547,6 +562,9 @@
 				E063DE9FA4864B428F861FD8 /* Toast.m in Sources */,
 				D99E0F8B5E3E441D92C58F8E /* AppDelegate+notification.m in Sources */,
 				D555016B2FAA4FD2910094DE /* PushPlugin.m in Sources */,
+				1FB12386677B49BC8D341746 /* CDVFile.m in Sources */,
+				5B6ECE02480E44ADB0F3B58B /* CDVLocalFilesystem.m in Sources */,
+				8A57013D20CD4214955EAADF /* CDVAssetLibraryFilesystem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

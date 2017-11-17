@@ -49,6 +49,9 @@
         "phonegap-plugin-push": {
             "SENDER_ID": "809436805306",
             "PACKAGE_NAME": "com.tbmyazilim.www"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.tbmyazilim.www"
         }
     },
     "dependent_plugins": {

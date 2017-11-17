@@ -28,7 +28,8 @@
             "cordova-plugin-x-toast": {},
             "phonegap-plugin-push": {
                 "SENDER_ID": "809436805306"
-            }
+            },
+            "cordova-plugin-file": {}
         }
     },
     "dependencies": {
@@ -40,6 +41,7 @@
         "cordova-plugin-compat": "^1.1.0",
         "cordova-plugin-console": "~1.0.3",
         "cordova-plugin-dialogs": "~1.2.1",
+        "cordova-plugin-file": "^5.0.0",
         "cordova-plugin-geolocation": "^2.4.3",
         "cordova-plugin-insomnia": "^4.3.0",
         "cordova-plugin-local-notifications": "^1.0.0",
