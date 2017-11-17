@@ -181,7 +181,7 @@ var mypanel={
                             '<tr>'+'<th>Alınacak Kişi</th>'+'<td>'+v.alinankisi+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Semt</th>'+'<td>'+v.alinansemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Adres</th>'+'<td>'+v.alinanadres+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Tel:</th>'+'<td>'+v.f2cep+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Tel:</th>'+'<td><a href="tel:'+v.f2cep+'"><u>'+v.f2cep+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>Sabit Tel:</th>'+'<td><a href="tel:'+v.alinacakkisiSabitTel+'"><u>'+v.alinacakkisiSabitTel+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not2+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Yetkili</th>'+'<td>'+v.alinacakYetkiliName+'</td>'+'</tr>'+
