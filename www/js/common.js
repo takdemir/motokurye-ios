@@ -149,14 +149,14 @@ function Common() {
                 }
             }
             common.showToast('resmi işliyorum!','long','center',0);
-            var options = new FileUploadOptions();
+            /*var options = new FileUploadOptions();
             options.fileKey = "file";
             options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
             options.mimeType = "image/jpeg";
-            options.params = {}; // if we need to send parameters to the server request
-            var ft = new FileTransfer();
+            options.params = {};*/ // if we need to send parameters to the server request
+            //var ft = new FileTransfer();
             common.showToast('resmi gönderiyorum!','long','center',0);
-            ft.upload(fileURI, encodeURI(window.localStorage.getItem('ipurl')+"/uploadimage"), win, fail, options);
+            //ft.upload(fileURI, encodeURI(window.localStorage.getItem('ipurl')+"/uploadimage"), win, fail, options);
         }
 
         function capturePhoto() {
