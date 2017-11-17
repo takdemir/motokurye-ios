@@ -204,7 +204,7 @@ var mypanel={
                             '<div class="panel panel-primary"><div class="panel-heading">DİĞER BİLGİLER</div><div class="panel-body">'+
                             '<table class="table table-bordered">'+
                             '<tr>'+'<th>Tutar</th>'+'<td>'+v.tutar+' TL</td>'+'</tr>'+
-                            '<tr>'+'<th>Ödeme Durumu</th>'+'<td>'+v.odemedurumu+' TL</td>'+'</tr>'+
+                            '<tr>'+'<th>Ödenip ödenmediği</th>'+'<td>'+v.odemedurumu+'</td>'+'</tr>'+
                             '<tr>'+'<th>Ödemeyi Yapacak/yapan</th>'+'<td>'+v.odemeyiYapan+'</td>'+'</tr>'+
                             '<tr>'+'<th>İşlem Tipi</th>'+'<td>'+v.islemtipi+'</td>'+'</tr>';
                             if(v.odemesekli!="" && v.odemesekli!=null) {
