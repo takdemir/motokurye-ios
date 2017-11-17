@@ -166,7 +166,8 @@ var mypanel={
                             '<table class="table table-bordered">'+
                             '<tr>'+'<th>Gönderi Nu.:</th>'+'<td>'+v.id+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Kişi</th>'+'<td>'+v.kayitveren+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td>'+v.kayitverencep+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td><a href="javascript:void(0)" onclick="common.callNumber('+v.kayitverencep+')">'+v.kayitverencep+'</a></td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Sabit Tel</th>'+'<td>'+v.kayitverensabittel+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Adres</th>'+'<td>'+v.kayitverenadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Semt</th>'+'<td>'+v.kayitverensemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Yetkili</th>'+'<td>'+v.yetkiliname+'</td>'+'</tr>'+
@@ -181,6 +182,7 @@ var mypanel={
                             '<tr>'+'<th>Alınacak Semt</th>'+'<td>'+v.alinansemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Adres</th>'+'<td>'+v.alinanadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Tel:</th>'+'<td>'+v.f2cep+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Sabit Tel:</th>'+'<td>'+v.alinacakkisiSabitTel+'</td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not2+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Yetkili</th>'+'<td>'+v.alinacakYetkiliName+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Yetkili Tel</th>'+'<td>'+v.alinacakYetkiliTel+'</td>'+'</tr>'+
@@ -193,6 +195,7 @@ var mypanel={
                             '<tr>'+'<th>Teslim Ed.Semt</th>'+'<td>'+v.teslimsemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Adres</th>'+'<td>'+v.teslimadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Tel:</th>'+'<td>'+v.f3cep+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Sabit Tel:</th>'+'<td>'+v.f3SabitTel+'</td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Yetkili</th>'+'<td>'+v.teslimedilecekYetkiliName+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Yetkili Tel.</th><td>'+v.teslimedilecekYetkiliTel+'</td>'+'</tr>'+
@@ -201,6 +204,8 @@ var mypanel={
                             '<div class="panel panel-primary"><div class="panel-heading">DİĞER BİLGİLER</div><div class="panel-body">'+
                             '<table class="table table-bordered">'+
                             '<tr>'+'<th>Tutar</th>'+'<td>'+v.tutar+' TL</td>'+'</tr>'+
+                            '<tr>'+'<th>Ödeme Durumu</th>'+'<td>'+v.odemedurumu+' TL</td>'+'</tr>'+
+                            '<tr>'+'<th>Ödemeyi Yapacak/yapan</th>'+'<td>'+v.odemeyiYapan+'</td>'+'</tr>'+
                             '<tr>'+'<th>İşlem Tipi</th>'+'<td>'+v.islemtipi+'</td>'+'</tr>';
                             if(v.odemesekli!="" && v.odemesekli!=null) {
                                 table += '<tr>' + '<th>Ödeme Şekli</th>' + '<td>' + v.odemesekli + '</td>' + '</tr>';

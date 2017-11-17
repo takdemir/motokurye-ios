@@ -109,6 +109,16 @@ function Common() {
     };
 
 
+    this.callNumber = function (phoneNumber) {
+
+        window.plugins.CallNumber.callNumber(function () {
+
+        }, function () {
+
+        }, phoneNumber, bypassAppChooser);
+
+    }
+
 
 
 
