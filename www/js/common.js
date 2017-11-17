@@ -121,22 +121,19 @@ function Common() {
     
     this.captureCamera = function () {
 
-        var pictureSource;   // picture source
-        var destinationType; // sets the format of returned value
-
-        pictureSource = navigator.camera.PictureSourceType;
-        destinationType = navigator.camera.DestinationType;
+        var pictureSource = navigator.camera.PictureSourceType;
+        var destinationType  = navigator.camera.DestinationType;
 
         function clearCache() {
             navigator.camera.cleanup();
+            common.showToast('Temizlik yapıyorum!','short','center',0);
         }
 
         var retries = 0;
-        function onCapturePhoto(fileURI) {
+        function onCapturePhoto(fileURI) {common.showToast('resmi işlemeye başlıyorum!','long','center',0);
             var win = function (r) {
                 clearCache();
                 retries = 0;
-                alert('Done!');
             }
 
             var fail = function (error) {
@@ -148,10 +145,10 @@ function Common() {
                 } else {
                     retries = 0;
                     clearCache();
-                    alert('Ups. Something wrong happens!');
+                    common.showToast('Resim yükleme hatası ','long','bottom',0);
                 }
             }
-
+            common.showToast('resmi işliyorum!','long','center',0);
             var options = new FileUploadOptions();
             options.fileKey = "file";
             options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
@@ -169,7 +166,7 @@ function Common() {
         }
 
         function onFail(message) {
-            alert('Failed because: ' + message);
+            common.showToast('Resim yükleme hatası ','long','bottom',0);
         }
 
         capturePhoto();
