@@ -29,7 +29,8 @@
             "phonegap-plugin-push": {
                 "SENDER_ID": "809436805306"
             },
-            "cordova-plugin-file": {}
+            "cordova-plugin-file": {},
+            "cordova-plugin-file-transfer": {}
         }
     },
     "dependencies": {
@@ -42,6 +43,7 @@
         "cordova-plugin-console": "~1.0.3",
         "cordova-plugin-dialogs": "~1.2.1",
         "cordova-plugin-file": "^5.0.0",
+        "cordova-plugin-file-transfer": "^1.7.0",
         "cordova-plugin-geolocation": "^2.4.3",
         "cordova-plugin-insomnia": "^4.3.0",
         "cordova-plugin-local-notifications": "^1.0.0",

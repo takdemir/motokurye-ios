@@ -63,4 +63,5 @@
         <variable name="SENDER_ID" value="809436805306" />
     </plugin>
     <plugin name="cordova-plugin-file" spec="~5.0.0" />
+    <plugin name="cordova-plugin-file-transfer" spec="~1.7.0" />
 </widget>
