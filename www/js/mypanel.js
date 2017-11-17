@@ -166,7 +166,7 @@ var mypanel={
                             '<table class="table table-bordered">'+
                             '<tr>'+'<th>Gönderi Nu.:</th>'+'<td>'+v.id+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Kişi</th>'+'<td>'+v.kayitveren+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td><a href="javascript:void(0)" onclick="common.callNumber('+v.kayitverencep+')">'+v.kayitverencep+'</a></td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td><a href="javascript:void(0)" onclick="common.callNumber("'+v.kayitverencep+'")">'+v.kayitverencep+'</a></td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Sabit Tel</th>'+'<td>'+v.kayitverensabittel+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Adres</th>'+'<td>'+v.kayitverenadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Semt</th>'+'<td>'+v.kayitverensemt+'</td>'+'</tr>'+

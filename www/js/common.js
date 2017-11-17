@@ -111,10 +111,10 @@ function Common() {
 
     this.callNumber = function (phoneNumber) {
 
-        window.plugins.CallNumber.callNumber(function () {
-
-        }, function () {
-
+        window.plugins.CallNumber.callNumber(function (result) {
+            common.showToast(result,'long','center',0);
+        }, function (result) {
+            common.showToast(result,'long','center',0);
         }, phoneNumber, bypassAppChooser);
 
     }
