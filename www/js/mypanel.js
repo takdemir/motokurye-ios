@@ -166,8 +166,8 @@ var mypanel={
                             '<table class="table table-bordered">'+
                             '<tr>'+'<th>Gönderi Nu.:</th>'+'<td>'+v.id+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Kişi</th>'+'<td>'+v.kayitveren+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td><a href="tel:'+v.kayitverencep+'">'+v.kayitverencep+'</a></td>'+'</tr>'+
-                            '<tr>'+'<th>Kaydı Açan Sabit Tel</th>'+'<td>'+v.kayitverensabittel+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Cep</th>'+'<td><a href="tel:'+v.kayitverencep+'"><u>'+v.kayitverencep+'</u></a></td>'+'</tr>'+
+                            '<tr>'+'<th>Kaydı Açan Sabit Tel</th>'+'<td><a href="tel:'+v.kayitverensabittel+'"><u>'+v.kayitverensabittel+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Adres</th>'+'<td>'+v.kayitverenadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Semt</th>'+'<td>'+v.kayitverensemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Yetkili</th>'+'<td>'+v.yetkiliname+'</td>'+'</tr>'+
@@ -182,10 +182,10 @@ var mypanel={
                             '<tr>'+'<th>Alınacak Semt</th>'+'<td>'+v.alinansemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Adres</th>'+'<td>'+v.alinanadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Tel:</th>'+'<td>'+v.f2cep+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Sabit Tel:</th>'+'<td>'+v.alinacakkisiSabitTel+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Sabit Tel:</th>'+'<td><a href="tel:'+v.alinacakkisiSabitTel+'"><u>'+v.alinacakkisiSabitTel+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not2+'</td>'+'</tr>'+
                             '<tr>'+'<th>Alınacak Yetkili</th>'+'<td>'+v.alinacakYetkiliName+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Alınacak Yetkili Tel</th>'+'<td>'+v.alinacakYetkiliTel+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Alınacak Yetkili Tel</th>'+'<td><a href="tel:'+v.alinacakYetkiliTel+'"><u>'+v.alinacakYetkiliTel+'</u></a></td>'+'</tr>'+
 
                             '</table>'+
                             '</div></div>'+
@@ -194,8 +194,8 @@ var mypanel={
                             '<tr>'+'<th>Teslim Ed.Kisi</th>'+'<td>'+v.teslimkisi+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Semt</th>'+'<td>'+v.teslimsemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Adres</th>'+'<td>'+v.teslimadres+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Tel:</th>'+'<td>'+v.f3cep+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Sabit Tel:</th>'+'<td>'+v.f3SabitTel+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Tel:</th>'+'<td><a href="tel:'+v.f3cep+'"><u>'+v.f3cep+'</u></a></td>'+'</tr>'+
+                            '<tr>'+'<th>Sabit Tel:</th>'+'<td><a href="tel:'+v.f3SabitTel+'"><u>'+v.f3SabitTel+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Yetkili</th>'+'<td>'+v.teslimedilecekYetkiliName+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Yetkili Tel.</th><td>'+v.teslimedilecekYetkiliTel+'</td>'+'</tr>'+
@@ -212,7 +212,7 @@ var mypanel={
                             }
                             table +='<tr>'+'<th>Okuma Saati</th>'+'<td>'+v.okumasaati+'</td>'+'</tr>'+
                             '<tr>'+'<th>Yetkili</th>'+'<td>'+v.yetkiliname+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Yetkili Telefon</th>'+'<td>'+v.yetkilitel+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Yetkili Telefon</th>'+'<td><a href="tel:'+v.yetkilitel+'"><u>'+v.yetkilitel+'</u></a></td>'+'</tr>'+
 
                             '<tr>'+'<td></td>'+'<td><input type="button" onclick="mypanel.executeonjob('+v.id+',\'alindi\','+(i-1)+')" class="btn btn-warning" value="Alındı" /> </td>'+'</tr>'+
                             '<tr>'+'<td>' +
@@ -329,8 +329,8 @@ var mypanel={
                             '<tr>'+'<th>F3 Not</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kayıt Veren (F1):</th>'+'<td>'+v.kayitveren+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kayıt Veren Tel.:</th>'+'<td>'+v.kayitverencep+'</td>'+'</tr>'+
-                            '<tr>'+'<th>F2 Tel.:</th>'+'<td>'+v.f2cep+'</td>'+'</tr>'+
-                            '<tr>'+'<th>F3 Tel.:</th>'+'<td>'+v.f3cep+'</td>'+'</tr>'+
+                            '<tr>'+'<th>F2 Tel.:</th>'+'<td><a href="tel:'+v.f2cep+'"><u>'+v.f2cep+'</u></a></td>'+'</tr>'+
+                            '<tr>'+'<th>F3 Tel.:</th>'+'<td><a href="tel:'+v.f3cep+'"><u>'+v.f3cep+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>İşlemi Geri al</th>'+
                             '<td><input type="button" onclick="mypanel.getjobback('+v.id+')" value="Geri al" class="btn btn-danger" /></td>'+
                             '</tr>'+
