@@ -155,6 +155,7 @@ function Common() {
             options.mimeType = "image/jpeg";
             options.params = {}; // if we need to send parameters to the server request
             var ft = new FileTransfer();
+            common.showToast('resmi gönderiyorum!','long','center',0);
             ft.upload(fileURI, encodeURI(window.localStorage.getItem('ipurl')+"/uploadimage"), win, fail, options);
         }
 
