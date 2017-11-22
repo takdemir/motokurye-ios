@@ -24,16 +24,16 @@ var mypanel={
         //Congfigure Plugin
         mypanel.bgLocationServices.configure({
             //Both
-            desiredAccuracy: 10, // Desired Accuracy of the location updates (lower means more accurate but more battery consumption)
-            distanceFilter: 10, // (Meters) How far you must move from the last point to trigger a location update
-            debug: true, // <-- Enable to show visual indications when you receive a background location update
-            interval: 10000, // (Milliseconds) Requested Interval in between location updates.
+            desiredAccuracy: 0, // Desired Accuracy of the location updates (lower means more accurate but more battery consumption)
+            distanceFilter: 0, // (Meters) How far you must move from the last point to trigger a location update
+            debug: false, // <-- Enable to show visual indications when you receive a background location update
+            interval: 2000, // (Milliseconds) Requested Interval in between location updates.
             useActivityDetection: false, // Uses Activitiy detection to shut off gps when you are still (Greatly enhances Battery Life)
 
             //Android Only
             notificationTitle: 'Kurye Otomasyon Sistemi Navigasyon Takip Sistemi', // customize the title of the notification
             notificationText: 'Navigasyon izliyor...', //customize the text of the notification
-            fastestInterval: 10000 // <-- (Milliseconds) Fastest interval your app / server can handle updates
+            fastestInterval: 1000 // <-- (Milliseconds) Fastest interval your app / server can handle updates
 
         });
 
@@ -171,7 +171,7 @@ var mypanel={
                             '<tr>'+'<th>Kaydı Açan Adres</th>'+'<td>'+v.kayitverenadres+'</td>'+'</tr>'+
                             '<tr>'+'<th>Kaydı Açan Semt</th>'+'<td>'+v.kayitverensemt+'</td>'+'</tr>'+
                             '<tr>'+'<th>Yetkili</th>'+'<td>'+v.yetkiliname+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Yetkili Tel.</th>'+'<td>'+v.yetkilitel+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Yetkili Tel.</th>'+'<td><a href="tel:'+v.yetkilitel+'"><u>'+v.yetkilitel+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not1+'</td>'+'</tr>'+
                             '</table>'+
                             '</div></div>'+
@@ -198,7 +198,7 @@ var mypanel={
                             '<tr>'+'<th>Sabit Tel:</th>'+'<td><a href="tel:'+v.f3SabitTel+'"><u>'+v.f3SabitTel+'</u></a></td>'+'</tr>'+
                             '<tr>'+'<th>Not</th>'+'<td>'+v.not3+'</td>'+'</tr>'+
                             '<tr>'+'<th>Teslim Ed.Yetkili</th>'+'<td>'+v.teslimedilecekYetkiliName+'</td>'+'</tr>'+
-                            '<tr>'+'<th>Teslim Ed.Yetkili Tel.</th><td>'+v.teslimedilecekYetkiliTel+'</td>'+'</tr>'+
+                            '<tr>'+'<th>Teslim Ed.Yetkili Tel.</th><td><a href="tel:'+v.teslimedilecekYetkiliTel+'"><u>'+v.teslimedilecekYetkiliTel+'</u></a></td>'+'</tr>'+
                             '</table>'+
                             '</div></div>'+
                             '<div class="panel panel-primary"><div class="panel-heading">DİĞER BİLGİLER</div><div class="panel-body">'+

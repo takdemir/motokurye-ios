@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/Viras-/cordova-plugin-powermanagement.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/Viras-/cordova-plugin-powermanagement.git",
+        "spec": "git+https://github.com/Viras-/cordova-plugin-powermanagement.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:Viras-/cordova-plugin-powermanagement.git",
+          "sshUrl": "git+ssh://git@github.com/Viras-/cordova-plugin-powermanagement.git",
+          "httpsUrl": "git+https://github.com/Viras-/cordova-plugin-powermanagement.git",
+          "gitUrl": "git://github.com/Viras-/cordova-plugin-powermanagement.git",
+          "shortcut": "github:Viras-/cordova-plugin-powermanagement",
+          "directUrl": "https://raw.githubusercontent.com/Viras-/cordova-plugin-powermanagement/master/package.json"
+        }
+      },
+      "C:\\MTV1.0-IOS\\motokurye\\motokurye\\node_modules"
+    ]
+  ],
+  "_from": "git+https://github.com/Viras-/cordova-plugin-powermanagement.git",
+  "_id": "cordova-plugin-powermanagement-orig@1.1.2",
+  "_inCache": true,
+  "_location": "/cordova-plugin-powermanagement-orig",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/Viras-/cordova-plugin-powermanagement.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/Viras-/cordova-plugin-powermanagement.git",
+    "spec": "git+https://github.com/Viras-/cordova-plugin-powermanagement.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:Viras-/cordova-plugin-powermanagement.git",
+      "sshUrl": "git+ssh://git@github.com/Viras-/cordova-plugin-powermanagement.git",
+      "httpsUrl": "git+https://github.com/Viras-/cordova-plugin-powermanagement.git",
+      "gitUrl": "git://github.com/Viras-/cordova-plugin-powermanagement.git",
+      "shortcut": "github:Viras-/cordova-plugin-powermanagement",
+      "directUrl": "https://raw.githubusercontent.com/Viras-/cordova-plugin-powermanagement/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Viras-/cordova-plugin-powermanagement.git#71c349a71042638069170063598a8c1b29630dd2",
+  "_shasum": "763d1110ec295dc8319f19c10b9df2b695f03a2e",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/Viras-/cordova-plugin-powermanagement.git",
+  "_where": "C:\\MTV1.0-IOS\\motokurye\\motokurye\\node_modules",
+  "author": {
+    "name": "Viras-"
+  },
+  "bugs": {
+    "url": "https://github.com/Viras-/cordova-plugin-powermanagement/issues"
+  },
+  "dependencies": {},
+  "description": "Plugin for managing the power state (i.e. idle switching) for cordova 3.0+. The original one.",
+  "devDependencies": {},
+  "gitHead": "71c349a71042638069170063598a8c1b29630dd2",
+  "homepage": "https://github.com/Viras-/cordova-plugin-powermanagement#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp7",
+    "cordova-wp8"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-powermanagement-orig",
+  "optionalDependencies": {},
+  "readme": "PowerManagement\r\n===============\r\nPlugin for Cordova (3.0+)\r\n\r\nThe PowerManagement plugin offers access to the devices power-management functionality.\r\nIt should be used for applications which keep running for a long time without any user interaction.\r\n\r\nFor details on power functionality see:\r\n\r\n* Android: [PowerManager](http://developer.android.com/reference/android/os/PowerManager.html)\r\n* iOS: [idleTimerDisabled](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIApplication_Class/Reference/Reference.html#//apple_ref/occ/instp/UIApplication/idleTimerDisabled)\r\n* WindowsPhone: [UserIdleDetectionMode](http://msdn.microsoft.com/en-US/library/windowsphone/develop/microsoft.phone.shell.phoneapplicationservice.useridledetectionmode%28v=vs.105%29.aspx)\r\n* Windows: [Windows.System.Display.DisplayRequest](https://msdn.microsoft.com/en-us/library/windows/apps/windows.system.display.displayrequest#methods)\r\n\r\nInstallation\r\n---------\r\nInstall using npm:\r\n\r\n`$ npm i cordova-plugin-powermanagement-orig`\r\n\r\nInstall the plugin using the cordova command line utility:\r\n\r\n`$ cordova plugin add https://github.com/Viras-/cordova-plugin-powermanagement.git`\r\n\r\nUsage\r\n-----\r\n\r\n### window.powerManagement.acquire(successCallback, failureCallback)\r\nAcquire a wakelock by calling this.\r\n\r\n\twindow.powerManagement.acquire(function() {\r\n\t\tconsole.log('Wakelock acquired');\r\n\t}, function() {\r\n\t\tconsole.log('Failed to acquire wakelock');\r\n\t});\r\n\r\n### window.powerManagement.dim(successCallback, failureCallback)\r\nThis acquires a partial wakelock, allowing the screen to be dimmed.\r\n\r\n\twindow.powerManagement.dim(function() {\r\n\t\tconsole.log('Wakelock acquired');\r\n\t}, function() {\r\n\t\tconsole.log('Failed to acquire wakelock');\r\n\t});\r\n\r\nThis function is nort supported on windows platform and will invoke the successCallback.\r\n\r\n### window.powerManagement.release(successCallback, failureCallback)\r\nRelease the wakelock. It's important to do this when you're finished with the wakelock, to avoid unnecessary battery drain.\r\n\r\n\twindow.powerManagement.release(function() {\r\n\t\tconsole.log('Wakelock released');\r\n\t}, function() {\r\n\t\tconsole.log('Failed to release wakelock');\r\n\t});\r\n\r\n### [Android Only] window.powerManagement.setReleaseOnPause(enabled, successCallback, failureCallback)\r\nBy default, the plugin will automatically release a wakelock when your app is paused (e.g. when the screen is turned off, or the user switches to another app). It will reacquire the wakelock upon app resume. If you would prefer to disable this behaviour, you can use this function.\r\n\r\n\twindow.powerManagement.setReleaseOnPause(false, function() {\r\n\t\tconsole.log('Set successfully');\r\n\t}, function() {\r\n\t\tconsole.log('Failed to set');\r\n\t});\r\n\r\nNote that in all the above examples, all callbacks are optional.\r\n\r\nLicense\r\n=======\r\nCopyright 2013 Wolfgang Koller\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\");\r\nyou may not use this file except in compliance with the License.\r\nYou may obtain a copy of the License at\r\n\r\n    http://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software\r\ndistributed under the License is distributed on an \"AS IS\" BASIS,\r\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\nSee the License for the specific language governing permissions and\r\nlimitations under the License.\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viras-/cordova-plugin-powermanagement.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.2"
+}

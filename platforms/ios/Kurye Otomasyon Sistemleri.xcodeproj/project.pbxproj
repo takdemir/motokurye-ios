@@ -72,6 +72,7 @@
 		1FB12386677B49BC8D341746 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E558F7B5141430BB955DCF5 /* CDVFile.m */; };
 		5B6ECE02480E44ADB0F3B58B /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EFE6CB3B343A087CCF43C /* CDVLocalFilesystem.m */; };
 		8A57013D20CD4214955EAADF /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C5CB9E3E684BB7B0E6C047 /* CDVAssetLibraryFilesystem.m */; };
+		DB33783C029746DFB061C317 /* PowerManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD2B788C1C64725A4577EE2 /* PowerManagement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +204,8 @@
 		A88413114F534043AB54B673 /* CDVFile.h */ = {isa = PBXFileReference; name = "CDVFile.h"; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		1E1B4550C66A45F7B6B04A20 /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; name = "CDVLocalFilesystem.h"; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		FAC356C24B39464EA6FA910E /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.h"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CDD2B788C1C64725A4577EE2 /* PowerManagement.m */ = {isa = PBXFileReference; name = "PowerManagement.m"; path = "at.gofg.sportscomputer.powermanagement/PowerManagement.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		742B2E1E5A2742CE82C463CC /* PowerManagement.h */ = {isa = PBXFileReference; name = "PowerManagement.h"; path = "at.gofg.sportscomputer.powermanagement/PowerManagement.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +436,8 @@
 				A88413114F534043AB54B673 /* CDVFile.h */,
 				1E1B4550C66A45F7B6B04A20 /* CDVLocalFilesystem.h */,
 				FAC356C24B39464EA6FA910E /* CDVAssetLibraryFilesystem.h */,
+				CDD2B788C1C64725A4577EE2 /* PowerManagement.m */,
+				742B2E1E5A2742CE82C463CC /* PowerManagement.h */,
 			);
 			name = Plugins;
 			path = "Kurye Otomasyon Sistemleri/Plugins";
@@ -565,6 +570,7 @@
 				1FB12386677B49BC8D341746 /* CDVFile.m in Sources */,
 				5B6ECE02480E44ADB0F3B58B /* CDVLocalFilesystem.m in Sources */,
 				8A57013D20CD4214955EAADF /* CDVAssetLibraryFilesystem.m in Sources */,
+				DB33783C029746DFB061C317 /* PowerManagement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.tbmyazilim.www" version="1.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.tbmyazilim.www" version="1.0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Kurye Otomasyon Sistemleri</name>
     <description>
         Kurye Otomasyon Sistemleri
@@ -63,4 +63,5 @@
         <variable name="SENDER_ID" value="809436805306" />
     </plugin>
     <plugin name="cordova-plugin-file" spec="~5.0.0" />
+    <plugin name="at.gofg.sportscomputer.powermanagement" spec="https://github.com/Viras-/cordova-plugin-powermanagement.git" />
 </widget>

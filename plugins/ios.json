@@ -52,6 +52,9 @@
         },
         "cordova-plugin-file": {
             "PACKAGE_NAME": "com.tbmyazilim.www"
+        },
+        "at.gofg.sportscomputer.powermanagement": {
+            "PACKAGE_NAME": "com.tbmyazilim.www"
         }
     },
     "dependent_plugins": {

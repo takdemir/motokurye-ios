@@ -331,6 +331,14 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "id": "at.gofg.sportscomputer.powermanagement.device",
+        "file": "plugins/at.gofg.sportscomputer.powermanagement/www/powermanagement.js",
+        "pluginId": "at.gofg.sportscomputer.powermanagement",
+        "clobbers": [
+            "window.powerManagement"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -350,7 +358,8 @@ module.exports.metadata =
     "cordova-plugin-vibration": "2.1.5",
     "cordova-plugin-x-toast": "2.6.0",
     "phonegap-plugin-push": "1.8.0",
-    "cordova-plugin-file": "5.0.0"
+    "cordova-plugin-file": "5.0.0",
+    "at.gofg.sportscomputer.powermanagement": "1.1.2"
 };
 // BOTTOM OF METADATA
 });
