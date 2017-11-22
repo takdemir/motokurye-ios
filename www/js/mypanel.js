@@ -773,6 +773,11 @@ function onPause() {
 
     },5000);
     window.plugins.insomnia.keepAwake();
+    window.powerManagement.acquire(function() {
+        common.showToast('Wakelock acquired','long','bottom',0);
+    }, function() {
+        common.showToast('Failed to acquire wakelock','long','bottom',0);
+    });
 
 }
 
