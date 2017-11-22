@@ -108,6 +108,11 @@ var mypanel={
         window.localStorage.setItem("regid","");
         window.localStorage.removeItem("regid");
         mypanel.bgLocationServices.stop();
+        window.powerManagement.release(function() {
+
+        }, function() {
+
+        });
         window.location.href="index.html";
     },
     getjobsOnkurye: function (kuryeID) {
@@ -774,9 +779,9 @@ function onPause() {
     },5000);
     window.plugins.insomnia.keepAwake();
     window.powerManagement.acquire(function() {
-        common.showToast('Wakelock acquired','long','bottom',0);
+        common.showToast('Sistem arka planda çalışıyor!','long','bottom',0);
     }, function() {
-        common.showToast('Failed to acquire wakelock','long','bottom',0);
+        common.showToast('Arka planda çalışma hatası!','long','bottom',0);
     });
 
 }
